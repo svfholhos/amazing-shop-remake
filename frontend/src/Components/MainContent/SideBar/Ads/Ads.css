@@ -1,0 +1,16 @@
+.ads {
+  margin: 2rem 0 -19rem -1rem;
+  width: 15rem;
+  border-radius: 5px;
+}
+
+.ads a {
+  text-decoration: none;
+  color: #222;
+}
+
+.ad {
+  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+}

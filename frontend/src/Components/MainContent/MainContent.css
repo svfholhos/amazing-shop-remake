@@ -1,0 +1,10 @@
+.main-content {
+  padding: 0 8% 5% 8%;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 0 15px 5% 15px;
+  }
+}

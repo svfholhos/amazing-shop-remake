@@ -1,0 +1,37 @@
+.navigation {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-menu {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-item {
+  list-style-type: none;
+  margin-left: 1.5rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+}
+
+.menu-item a:hover {
+  color: #fff;
+}
+
+@media (max-width: 1200px) {
+  .menu-item {
+    margin-left: 3rem;
+  }
+
+  .navigation,
+  .logo {
+    width: unset;
+  }
+}

@@ -1,0 +1,45 @@
+.categories-item {
+  text-decoration: none;
+  color: #222;
+}
+
+.sideBar {
+  margin-top: -3.8rem;
+  border-radius: 5px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 15rem;
+  padding: 1rem 1rem 2.5rem 1rem;
+  background: #fff;
+}
+
+.category {
+  text-align: left;
+  border: none;
+  background: unset;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+
+  padding: 0;
+  outline: none;
+}
+
+.category:hover {
+  color: rgba(248, 203, 0, 1);
+}
+
+.all-categories {
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  .sideBar {
+    display: none;
+  }
+}
