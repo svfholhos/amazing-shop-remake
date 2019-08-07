@@ -1,29 +1,15 @@
 const express = require("express");
 const router = express.Router();
-const categories = require("../categories.json");
-const products = require("../products.json");
+const {
+  getAllCategories,
+  getCategoryById,
+  getProductsByCategoryId
+} = require("../controllers/categories");
 
-router.get("/categories", (req, res) => {
-  res.status(200).json(categories);
-});
+router.get("/categories", getAllCategories);
 
-router.get("/categories/:id", (req, res) => {
-  const id = req.params.id;
-  if (typeof categories.data[id - 1] !== "undefined") {
-    return res.status(200).json(categories.data[id - 1]);
-  } else {
-    return res.status(200).json(categories.error);
-  }
-});
+router.get("/categories/:id", getCategoryById);
 
-router.get("/categories/:id/products", (req, res) => {
-  const id = req.params.id;
-
-  return res
-    .status(200)
-    .json(
-      products.data.filter(product => product.categoryId.includes(Number(id)))
-    );
-});
+router.get("/categories/:id/products", getProductsByCategoryId);
 
 module.exports = router;
