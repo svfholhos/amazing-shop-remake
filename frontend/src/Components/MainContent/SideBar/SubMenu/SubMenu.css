@@ -15,4 +15,5 @@
 
 .subCategories-item:hover {
   color: rgba(248, 203, 0, 1);
+  cursor: pointer;
 }

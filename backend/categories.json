@@ -18,27 +18,27 @@
     {
       "id": 2,
       "name": "body",
-      "children": []
+      "children": ["test", "test"]
     },
     {
       "id": 3,
       "name": "foot",
-      "children": []
+      "children": ["test", "test"]
     },
     {
       "id": 4,
       "name": "hands",
-      "children": []
+      "children": ["test", "test"]
     },
     {
       "id": 5,
       "name": "hair",
-      "children": []
+      "children": ["test", "test"]
     },
     {
       "id": 6,
       "name": "makeup",
-      "children": []
+      "children": ["test", "test"]
     }
   ],
   "error": "category not found"

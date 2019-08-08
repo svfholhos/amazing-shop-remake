@@ -2,15 +2,19 @@ import React, { Component } from "react";
 import "./Product.css";
 
 class Product extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
-    console.log(this.props.item);
     return (
-      <div className="product" id={this.props.item.id}>
-        {this.props.item.name}
+      <div className="product" id={this.props.product.id}>
+        <img
+          src={this.props.product.img}
+          alt="this.props.product.name"
+          className="product-img"
+        />
+        <h4>{this.props.product.name}</h4>
+        <span className="price">
+          {this.props.product.price} {"\u20AC"}
+        </span>
+        <button className="add-to-cart">Add to cart</button>
       </div>
     );
   }

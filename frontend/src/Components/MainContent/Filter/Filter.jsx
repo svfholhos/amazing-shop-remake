@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "./Filter.css";
 
 class Filter extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <>
@@ -25,7 +21,6 @@ class Filter extends Component {
           <span className="sort-by">
             Sort:
             <span className="filter-blue">
-              {" "}
               By
               <br />
               Popularity
