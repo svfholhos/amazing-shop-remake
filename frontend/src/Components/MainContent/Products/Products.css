@@ -2,6 +2,14 @@
   margin-left: 2vw;
   width: 100%;
   padding-top: 2rem;
+  padding-left: 15rem;
+}
+
+#products {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-top: 2rem;
 }
 
 .content-header {
@@ -56,6 +64,7 @@ hr {
 @media (max-width: 1024px) {
   .products-wrapper {
     margin-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -70,5 +79,9 @@ hr {
     margin-right: 0;
     margin-top: 0.5rem;
     text-align: right;
+  }
+
+  #products {
+    justify-content: space-around;
   }
 }

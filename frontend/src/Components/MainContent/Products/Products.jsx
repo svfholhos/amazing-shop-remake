@@ -8,66 +8,18 @@ class Products extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      products: {
-        face: [
-          {
-            id: 0,
-            img: "/img/products-img/prod1.jpg",
-            name: "Missha All Around Safe Block Sebum Zero Sun",
-            price: 4.99
-          },
-          {
-            id: 1,
-            img: "/img/products-img/prod2.jpg",
-            name: "Claire’s Cloud 9 Blanc De Whitening Cream",
-            price: 20.0
-          },
-
-          {
-            id: 2,
-            img: "/img/products-img/prod3.jpg",
-            name: "Scinic Honey Banana Cleansing Foam",
-            price: 4.0
-          },
-
-          {
-            id: 3,
-            img: "/img/products-img/prod4.jpg",
-            name: "Cosrx Advanced Snail 92 All in One Cream",
-            price: 24.0
-          },
-
-          {
-            id: 4,
-            img: "/img/products-img/prod5.png",
-            name: "Innisfree Green Tea Balancing Cream",
-            price: 18.0
-          },
-
-          {
-            id: 5,
-            img: "/img/products-img/prod6.jpg",
-            name: "Skin79 Fresh Garden Mask - Snail",
-            price: 2.0
-          },
-
-          {
-            id: 6,
-            img: "/img/products-img/prod7.jpg",
-            name: "Tonymoly Pure Eco Snail Moisture Gel",
-            price: 8.0
-          },
-
-          {
-            id: 7,
-            img: "/img/products-img/prod8.jpg",
-            name: "Innisfree Canola Honey Mask",
-            price: 14.0
-          }
-        ]
-      }
+      products: []
     };
+    this.getProducts();
   }
+
+  getProducts = async () => {
+    const response = await fetch("https://localhost:5000/api/products").catch(
+      err => console.log(err)
+    );
+    const products = await response.json();
+    this.setState({ products });
+  };
 
   render() {
     return (
@@ -91,9 +43,9 @@ class Products extends Component {
         </div>
         <Filter />
         <hr />
-        <div className="product-list">
-          {this.state.products.face.map((item, index) => {
-            return <Product item={item} key={index} />;
+        <div id={"products"}>
+          {this.state.products.map((item, index) => {
+            return <Product product={item} key={index} />;
           })}
         </div>
       </div>

@@ -6,16 +6,16 @@ const Navigation = () => {
     <nav className="navigation">
       <ul className="main-menu">
         <li className="menu-item">
-          <a href="#">Shipping</a>{" "}
+          <a href="/">Shipping</a>
         </li>
         <li className="menu-item">
-          <a href="#">Blog</a>
+          <a href="/">Blog</a>
         </li>
         <li className="menu-item">
-          <a href="#">Company</a>
+          <a href="/">Company</a>
         </li>
         <li className="menu-item">
-          <a href="#">My account</a>
+          <a href="/">My account</a>
         </li>
       </ul>
     </nav>

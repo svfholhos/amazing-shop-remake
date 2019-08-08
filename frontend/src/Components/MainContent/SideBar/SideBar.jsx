@@ -10,31 +10,31 @@ class SideBar extends React.Component {
     };
   }
 
-  categories = Object.keys(this.props.categories);
-
   render() {
     return (
       <div className="sideBar">
         <span className="all-categories">All categories</span>
-        {this.categories.map((category, index) => {
+
+        {this.props.categories.map((category, index) => {
           return (
             <div key={index}>
               <button
                 className="category"
-                id={category}
+                id={category.name}
                 onClick={() => {
-                  //console.log(this.props.categories[category]);
                   this.setState(state => ({
                     activeCategory:
-                      state.activeCategory === category ? "" : category
+                      state.activeCategory === category.name
+                        ? ""
+                        : category.name
                   }));
                 }}
               >
-                {category}
+                {category.name}
               </button>
               <div className="subCategories">
-                {this.state.activeCategory === category && (
-                  <SubMenu subCategories={this.props.categories[category]} />
+                {this.state.activeCategory === category.name && (
+                  <SubMenu subCategories={category} />
                 )}
               </div>
             </div>

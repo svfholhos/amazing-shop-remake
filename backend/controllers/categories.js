@@ -1,6 +1,12 @@
 const categories = require("../categories.json");
 const products = require("../products.json");
 
+function Category(id, name, children) {
+  this.id = id;
+  this.name = name;
+  this.children = children;
+}
+
 const getAllCategories = (req, res) => {
   res.status(200).json(categories);
 };
@@ -23,4 +29,9 @@ const getProductsByCategoryId = (req, res) => {
     );
 };
 
-module.exports = { getAllCategories, getCategoryById, getProductsByCategoryId };
+module.exports = {
+  Category,
+  getAllCategories,
+  getCategoryById,
+  getProductsByCategoryId
+};

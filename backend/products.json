@@ -5,6 +5,7 @@
       "name": "Missha All Around Safe Block Sebum Zero Sun",
       "description": "Product description",
       "price": "4.99",
+      "img": "/img/products-img/prod1.jpg",
       "categoryId": [1],
       "rating": 4
     },
@@ -13,6 +14,7 @@
       "name": "Claire’s Cloud 9 Blanc De Whitening Cream",
       "description": "Product description",
       "price": 20.0,
+      "img": "/img/products-img/prod2.jpg",
       "categoryId": [3],
       "rating": 4.5
     },
@@ -21,6 +23,7 @@
       "name": "Scinic Honey Banana Cleansing Foam",
       "description": "Product description",
       "price": "4.99",
+      "img": "/img/products-img/prod3.jpg",
       "categoryId": [1],
       "rating": 3
     },
@@ -29,6 +32,7 @@
       "name": "Innisfree Green Tea Balancing Cream",
       "description": "description 123",
       "price": "4.99",
+      "img": "/img/products-img/prod4.jpg",
       "categoryId": [2],
       "rating": 4
     },
@@ -37,6 +41,7 @@
       "name": "Skin79 Fresh Garden Mask - Snail",
       "description": "Product description",
       "price": "4.99",
+      "img": "/img/products-img/prod5.png",
       "categoryId": [1],
       "rating": 4
     },
@@ -45,6 +50,7 @@
       "name": "Tonymoly Pure Eco Snail Moisture Gel",
       "description": "Product description",
       "price": "4.99",
+      "img": "/img/products-img/prod6.jpg",
       "categoryId": [1],
       "rating": 4
     },
@@ -53,6 +59,7 @@
       "name": "Innisfree Canola Honey Mask",
       "description": "Product description",
       "price": "4.99",
+      "img": "/img/products-img/prod7.jpg",
       "categoryId": [2],
       "rating": 4
     },
@@ -61,6 +68,7 @@
       "name": "Missha All Around Safe Block Sebum Zero Sun",
       "description": "Product description",
       "price": "4.99",
+      "img": "/img/products-img/prod8.jpg",
       "categoryId": [4],
       "rating": 4
     }

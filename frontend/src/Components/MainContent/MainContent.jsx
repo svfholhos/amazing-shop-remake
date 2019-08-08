@@ -6,26 +6,18 @@ class MainContent extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      categories: {
-        face: [
-          "Creams & Gels",
-          "Patches",
-          "Emulsions",
-          "Toners",
-          "Face Cleasing",
-          "Make up removal",
-          "Scrubs",
-          "Peeling",
-          "Masks"
-        ],
-        body: ["asfsdf", "sdfsdf"],
-        foot: ["bla"],
-        hands: [],
-        hair: [],
-        makeUp: []
-      }
+      categories: []
     };
+    this.getCategories();
   }
+
+  getCategories = async () => {
+    const response = await fetch("https://localhost:5000/api/categories").catch(
+      err => console.log(err)
+    );
+    const result = await response.json();
+    this.setState({ categories: result.data });
+  };
 
   render() {
     return (

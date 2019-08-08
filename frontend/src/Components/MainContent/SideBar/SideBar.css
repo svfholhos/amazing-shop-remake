@@ -4,6 +4,7 @@
 }
 
 .sideBar {
+  position: absolute;
   margin-top: -3.8rem;
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
@@ -29,6 +30,7 @@
 
 .category:hover {
   color: rgba(248, 203, 0, 1);
+  cursor: pointer;
 }
 
 .all-categories {
