@@ -13,7 +13,7 @@
       "id": 2,
       "name": "Claire’s Cloud 9 Blanc De Whitening Cream",
       "description": "Product description",
-      "price": 20.0,
+      "price": 20,
       "img": "/img/products-img/prod2.jpg",
       "categoryId": [3],
       "rating": 4.5
@@ -71,8 +71,43 @@
       "img": "/img/products-img/prod8.jpg",
       "categoryId": [4],
       "rating": 4
+    },
+    {
+      "id": 9,
+      "name": "Nivea",
+      "description": "Hands",
+      "price": 20,
+      "img": "/img/products-img/product9.jpg",
+      "categoryId": [1],
+      "rating": 4.5
+    },
+    {
+      "id": 10,
+      "name": "Nivea",
+      "description": "Hands",
+      "price": 20,
+      "img": "/img/products-img/product9.jpg",
+      "categoryId": [1],
+      "rating": 4.5
+    },
+    {
+      "id": 11,
+      "name": "Nivea",
+      "description": "Hands",
+      "price": 20,
+      "img": "/img/products-img/product9.jpg",
+      "categoryId": [1],
+      "rating": 4.5
+    },
+    {
+      "id": 12,
+      "name": "Nivea",
+      "description": "Hands",
+      "price": 20,
+      "img": "/img/products-img/product9.jpg",
+      "categoryId": [1],
+      "rating": 4.5
     }
   ],
-
-  "error": "product not found"
+  "error": "Error! Product not found..."
 }
