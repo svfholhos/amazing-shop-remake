@@ -1,6 +1,11 @@
 const express = require("express");
 const router = express.Router();
-const { getAllProducts, getProductById } = require("../controllers/products");
+const {
+  getAllProducts,
+  getProductById,
+  newProduct,
+  updateProduct
+} = require("../controllers/products");
 const { productIdValidation } = require("../middleware/products");
 const { validatePathParams } = require("../middleware/lib");
 
@@ -12,13 +17,8 @@ router.get(
   getProductById
 );
 
-/*
-router.get("/products/?category=:categoryId", (req, res) => {
-  const query = req.query;
-  const categoryId = req.params.categoryId;
-  console.log(categoryId, query);
-  return res.status(200).json(products.data);
-});
-*/
+router.post("/products", newProduct);
+
+router.put("/products/:id", updateProduct);
 
 module.exports = router;
